@@ -11,7 +11,7 @@ app = Flask(__name__)
 env = Env()
 env.read_env()  # read .env file, if it exists
 
-uri = env('MONGO_URI')        # establecer la variable de entorno MONGO_URI con la URI de la base de datos
+uri = env('MONGO_URI')              # establecer la variable de entorno MONGO_URI con la URI de la base de datos
                                     # MongoDB local:
                                     #     MONGO_URI = mongodb://localhost:27017
                                     # MongoDB Atlas:
