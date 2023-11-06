@@ -13,9 +13,9 @@ env.read_env()  # read .env file, if it exists
 
 uri = env('MONGO_URI')        # establecer la variable de entorno MONGO_URI con la URI de la base de datos
                                     # MongoDB local:
-                                    #     MONGO_URI = mongodb://localhost:270M17
+                                    #     MONGO_URI = mongodb://localhost:27017
                                     # MongoDB Atlas:
-                                    #     MONGO_URI = mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/appsNube?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE
+                                    #     MONGO_URI = mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/?retryWrites=true&w=majority
                                     # MongoDB en Docker
                                     #     MONGO_URI = mongodb://root:example@mongodb:27017
 
