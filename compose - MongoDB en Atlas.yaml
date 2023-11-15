@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  # http://localhost:8000
+  app:
+    build: .
+    environment:
+      MONGO_URI: mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/?retryWrites=true&w=majority
+    ports:
+      - "8000:8000"
+
+
+
+  
+
