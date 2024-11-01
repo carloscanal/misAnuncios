@@ -15,7 +15,7 @@ uri = env('MONGO_URI')              # establecer la variable de entorno MONGO_UR
                                     # MongoDB local:
                                     #     MONGO_URI = mongodb://localhost:27017
                                     # MongoDB Atlas:
-                                    #     MONGO_URI = mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/?retryWrites=true&w=majority
+                                    #     MONGO_URI = mongodb+srv://<USER>:<PASS>@<CLUSTER>.mongodb.net/?retryWrites=true&w=majority
                                     # MongoDB en Docker
                                     #     MONGO_URI = mongodb://root:example@mongodb:27017
 
