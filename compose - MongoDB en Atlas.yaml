@@ -4,8 +4,10 @@ services:
   # http://localhost:8000
   server:
     build: .
-    environment:
-      MONGO_URI: mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/?retryWrites=true&w=majority
+    # environment:
+    #   MONGO_URI: mongodb+srv://<USER>:<PASS>@<CLUSTER>.mongodb.net/?retryWrites=true&w=majority
+    env_file:
+      - .env
     ports:
       - "8000:8000"
 

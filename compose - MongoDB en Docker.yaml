@@ -18,8 +18,11 @@ services:
   server:
     # http://localhost:8000
     build: .
-    environment:
-      MONGO_URI: mongodb://root:example@mongodb:27017/
+    container_name: misAnuncios
+    # environment:
+    #   MONGO_URI: mongodb://root:example@mongodb:27017/
+    env_file:
+      - .env
     ports:
       - "8000:8000"
 
