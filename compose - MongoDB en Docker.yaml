@@ -9,8 +9,8 @@ services:
     ports:
       - 27018:27017    # para no chocar con el mongoDB de localhost
     volumes:
-       - ./data:/data/db   # uso un volumen montado en la carpeta del host ./data
-     # - mongodb_data:/data/db data/db   # para usar un volumen montado en el sistema de almacenamiento de Docker
+      - ./data:/data/db   # uso un volumen montado en la carpeta del host ./data
+    # - mongodb_data:/data/db data/db   # para usar un volumen montado en el sistema de almacenamiento de Docker
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
@@ -20,7 +20,7 @@ services:
     build: .
     container_name: misAnuncios
     # environment:
-    #   MONGO_URI: mongodb://root:example@mongodb:27017/
+    #  MONGO_URI: mongodb://root:example@mongodb:27017/
     env_file:
       - .env
     ports:
