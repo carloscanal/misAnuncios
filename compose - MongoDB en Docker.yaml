@@ -15,7 +15,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
       # MONGO_INITDB_DATABASE: misAnuncios
   server:
-    # http://localhost:8000
+    # http://localhost:7000
     build: .
     container_name: misAnuncios
     # environment:
@@ -23,7 +23,7 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8000"
+      - "7000:8000"
 
 # volumes:
 #  mongodb_data:
